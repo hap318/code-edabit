@@ -21,10 +21,9 @@ def email():
     host_email = f.readline().strip()
     password = f.readline().strip()
     app_pass = f.readline().strip()
-
-    email_reciever = "h4p2001@gmail.com"
+    email_reciever = f.readline().strip()
+    
     subject = "holiday request"
-
 
     em = EmailMessage()
     em["From"] = host_email
@@ -38,7 +37,8 @@ def email():
         smtp.login(host_email, app_pass)
         smtp.sendmail(host_email, email_reciever, em.as_string())
         print("Email sent!")
-        print("Email preview: ", msg)
+        print("Email recieved by:", email_reciever)
+        print("Email preview:", "\n", msg)
     
 
     
