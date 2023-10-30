@@ -40,9 +40,6 @@ def email():
         print("Email recieved by:", email_reciever)
         print("Email preview:", "\n", msg)
     
-
-    
-
 def ukDate(date):
     d1 = datetime.strptime(date, "%m/%d/%y")
     ukd1 = d1.strftime("%d/%m/%y")
