@@ -26,4 +26,4 @@ class Solution:
         return res
     
 s = Solution()
-s.longestPalindrome("bbbab")
+s.longestPalindrome("testing")
