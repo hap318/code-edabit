@@ -1,6 +1,6 @@
 class Solution:
     def myAtoi(self, s: str) -> int:
-        s.strip()
+        s = s.strip()
         if not s:
             return 0
         out = 0
@@ -27,3 +27,7 @@ class Solution:
             return out
         else:
             return -out
+
+s = Solution()
+        
+print(s.myAtoi("1235"))
