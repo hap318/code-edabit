@@ -16,4 +16,4 @@ def recurring_char2(seq):
     return None
         
 
-print(recurring_char2("abac"))
+print(recurring_char2("abbac"))

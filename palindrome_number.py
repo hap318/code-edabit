@@ -23,5 +23,5 @@ class Solution:
         return pal
 
 s = Solution()
-print(s.isPalindrome(104230))
+print(s.isPalindrome(1001))
             
